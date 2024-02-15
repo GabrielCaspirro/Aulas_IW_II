@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h1, h2{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXIBE OPERACÕES ENTRE DOIS NÚMEROS</h1>
+    <script>
+        var num1 = prompt("Digite o primeiro número")
+        var num2 = prompt("Digite o segundo número")
+        num1 = Number(num1)
+        num2 = Number(num2)
+
+        console.log("Adição: " + (num1 + num2))
+        console.log("Subtração: " + (num1 - num2))
+        console.log("Multiplicação: " + (num1 * num2))
+        console.log("Divisão: " + (num1 / num2))
+
+        //MOSTRANDO NA TELA DO NAVEGADOR
+        document.writeln("<h2>O primeiro número é " + num1 + "</h2>");
+        document.writeln("<h2>O segundo número é " + num2 + "</h2>");
+        document.writeln("<br>")
+
+        //INTERPOLAÇÃO DE VALORES - TEMPLATE STRING
+        document.write(`<h2>Num1 = ${num1} e Num2 = ${num2}<h2>`)
+        document.write("<h2>Adição: " + (num1 + num2) +"<h2>")
+        document.write("<h2> Subtração: " + (num1 - num2) + "<h2>")
+        document.write("<h2> Multiplicação: " + (num1 * num2) +"<h2>")
+        document.write("<h2> Divisão: " + (num1 / num2) + "<h2>")
+
+        /*alert("Adição: " + (num1 + num2))
+        alert("Subtração: " + (num1 - num2))
+        alert("Multiplicação: " + (num1 * num2))
+        alert("Divisão: " + (num1 / num2))*/
+    </script>
+</body>
+</html>
