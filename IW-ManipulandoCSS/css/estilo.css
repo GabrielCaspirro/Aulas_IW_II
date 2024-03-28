@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+}
+
+main {
+    min-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+}
+
+#conteudos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1, section, article {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+/* botoes */
+button {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+/* botao light */
+#btlight {
+    background: #ededed;
+    color: #121212;
+}
+
+/* botao dark */
+#btdark {
+    background-color: #263238;
+    color: #fff;
+}
+
+#btrose{
+    background-color: #ff74ef;
+    color: #000000;
+}
+
+#btblue{
+    background-color: #1010b2;
+    color: #ffffff;
+}
+
+#btyellow{
+    background-color: #fdf911;
+    color: #000000;
+}
+
+/* articles com a class box */
+.box {
+    padding: 0.625rem;
+    border-radius: 8px;
+}
+
+/* Estilos para serem usados via JS */
+.light {
+    background: #fff;
+    color: #191919;
+}
+
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.azul {
+    background: #1a237e;
+    color: #fff;
+}
+
+.rose{
+    background: #ff01d9;
+    color: #000000;
+}
+
+.escura {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.625rem;
+}
+.amarelo {
+    background: #ffc107;
+    color: #000000;
+}
