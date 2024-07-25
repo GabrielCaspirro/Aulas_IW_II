@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Cliente</title>
+    <link rel="stylesheet" href="..public/styles/styles.css">
+</head>
+<body>
+    <h1>Detalhes do Cliente</h1>
+    <p>ID: <%= customer.id %></p>
+    <p>Nome: <%= customer.name %></p>
+    <p>Email: <%= customer.email %></p>
+    <p>Telefone: <%= customer.phone %></p>
+    <a href="/customer/<%= customer.id %>/edit">Editar</a>
+    <a href="/">Voltar</a>
+</body>
+</html>

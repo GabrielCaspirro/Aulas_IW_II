@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="..public/styles/styles.css">
+</head>
+<body>
+    <h1>Editar Cliente</h1>
+    <form action="/customer/<%= customer.id %>" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" value="<%= customer.name %>" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= customer.email %>" required>
+        <br>
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" name="phone" value="<%= customer.phone %>">
+        <br>
+        <button type="submit">Atualizar</button>
+    </form>
+    <a href="/">Voltar</a>
+</body>
+</html>
