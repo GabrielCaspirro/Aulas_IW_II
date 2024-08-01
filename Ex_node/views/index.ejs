@@ -1,0 +1,21 @@
+<!-- views/index.ejs -->
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Lista de Clientes</title>
+</head>
+<body>
+    <div class = "container">
+        <h1>Lista de Clientes</h1>
+        <ul>
+            <% clients.forEach(client => { %>
+                <li><%= client.nome %> - <%= client.email %>
+                    <a href="/edit/<%= client.id %>">Editar</a>
+                    <a href="/delete/<%= client.id %>">Excluir</a>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/add">Adicionar Cliente</a>
+    </div>
+</body>
+</html>
